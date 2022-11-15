@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
     </head>
     <body class="antialiased">
         <!-- ====== Navbar Section Start -->
-        <header
+        {{-- <header
         x-data="
             {
                 navbarOpen: false
@@ -33,7 +33,6 @@
             </div>
             <div class="flex w-full items-center justify-between px-4">
             <div>
-                {{-- toggle btn visible for width smaller than 960px --}}
                 <button
                 @click="navbarOpen = !navbarOpen"
                 :class="navbarOpen && 'navbarTogglerActive' "
@@ -84,7 +83,7 @@
                 </nav>
             </div>
             <div 
-            {{-- :class="!navbarOpen && 'hidden' " --}}
+            :class="!navbarOpen && 'hidden' "
             class="hidden justify-end pr-16 sm:flex lg:pr-0">
                 <a
                 href="javascript:void(0)"
@@ -102,10 +101,14 @@
             </div>
         </div>
         </div>
-        </header>
+        </header> --}}
         <!-- ====== Navbar Section End -->
 
-        
+        <x-layout.navbar>
+            
+        </x-layout.navbar>
+
+
         {{ $slot }}
         <footer>Footer</footer>
 
