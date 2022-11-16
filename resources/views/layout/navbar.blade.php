@@ -30,7 +30,7 @@
                     <nav
                         :class="!navbarOpen && 'hidden' "
                         id="navbarCollapse"
-                        class="absolute right-0 top-full bg-white py-5 px-6 z-50 shadow-lg w-full dark:bg-slate-900 dark:text-gray lg:px-0 lg:max-w-full lg:w-full lg:right-4 lg:block lg:static lg:shadow-none"
+                        class="absolute right-0 top-full bg-white py-5 px-6 z-50 shadow-lg w-full dark:bg-slate-900 dark:text-zinc-900 lg:px-0 lg:max-w-full lg:w-full lg:right-4 lg:block lg:static lg:shadow-none"
                     >
                     <ul class="block lg:flex lg:items-center">
                         @foreach ($navigationItems as $item)
