@@ -6,6 +6,9 @@ use Illuminate\View\Component;
 
 class VideoProjectsPresentation extends Component
 {
+
+    public array $videoProjectsPresentation = [];
+
     /**
      * Create a new component instance.
      *
@@ -13,7 +16,23 @@ class VideoProjectsPresentation extends Component
      */
     public function __construct()
     {
-        //
+        $this->videoProjectsPresentation = [
+            [
+                'videoId' => 'aL80DKQTsEA',
+                'title' => 'Full stack application application with Laravel, Tailwind and AlpineJS',
+                'description' => url('https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-01.jpg'),
+            ],
+            [
+                'videoId' => 'aL80DKQTsEA',
+                'title' => 'Full stack application application with Laravel, Tailwind and AlpineJS',
+                'description' => url('https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-01.jpg'),
+            ],
+            [
+                'videoId' => 'aL80DKQTsEA',
+                'title' => 'Full stack application application with Laravel, Tailwind and AlpineJS',
+                'description' => url('https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-01.jpg'),
+            ]
+        ];
     }
 
     /**
