@@ -20,7 +20,7 @@ class Portfolio extends Component
         $this->items = [
             [
                 'category' => ['Laravel', 'Tailwind', 'AlpineJs'],
-                'title' => 'Full stack application application with Laravel, Tailwind and AlpineJS',
+                'title' => 'Fantasy Football - working in progress',
                 // 'image' => url('/img/logo.png'),
                 'image' => url('https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-01.jpg'),
                 'gitHub' => 'https://github.com/Rob-Dev84/FantasyCalcio',
@@ -33,7 +33,7 @@ class Portfolio extends Component
             ],
             [
                 'category' => ['PHP', 'Bootstrap', 'JQuery'],
-                'title' => 'Full stack application application with Laravel, Tailwind and AlpineJS',
+                'title' => 'Task Management System',
                 'image' => url('/img/wrm.png'),
                 'gitHub' => 'https://wrm.solutions/',
             ]

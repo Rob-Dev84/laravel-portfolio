@@ -8,7 +8,7 @@
                     >
                         {{ _("Welcome, my name is Roberto Manna and I'm a web developer") }} 
                     </h1>
-                    <p class="text-base mb-8 max-w-[520px]">
+                    <p class="dark:text-zinc-300 mb-8 text-base mb-8 max-w-[520px]">
                         {{ _('I mainly work as back end with PHP and I love Laravel framework') }}
                         <br>
                         {{ _('I also like the front end and in my free time I like to explore it') }}
@@ -38,6 +38,7 @@
                 <div class="lg:ml-auto lg:text-right">
                   <div class="relative z-10 inline-block pt-11 lg:pt-0">
                     <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/hero/hero-image-01.png" alt="hero" class="max-w-full lg:ml-auto">
+                    {{-- <img src="/img/RobertoManna.png" alt="hero" class="max-w-full lg:ml-auto rounded-tl-3xl"> --}}
                     <span class="absolute -left-8 -bottom-8 z-[-1]">
                       <svg width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="2.5" cy="2.5" r="2.5" fill="#3056D3"></circle>

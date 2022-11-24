@@ -7,10 +7,10 @@
             {{ _("Here you can understand more about me") }}
         </h2>
     </x-slot>
-        <x-button-link href="" variant="dark" class="mr-3" target="_blank">
+        <x-button-link href="" variant="dark" class="mr-3 mb-3 w-full text-center lg:w-auto" target="_blank">
             {{ _("View video") }}
         </x-button-link>
-        <x-button-link href="https://github.com/Rob-Dev84" variant="red" target="_blank">
+        <x-button-link href="https://github.com/Rob-Dev84" variant="red" class="mr-3 mb-3 w-full text-center lg:w-auto" target="_blank">
             {{ _("View my GitHub") }}
         </x-button-link>
     

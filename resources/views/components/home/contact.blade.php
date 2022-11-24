@@ -1,4 +1,4 @@
-<section id="#contact" class="dark:bg-primary relative z-10 overflow-hidden bg-white py-20 lg:py-[120px]">
+<section id="contact" class="dark:bg-primary relative z-10 overflow-hidden bg-white py-20 lg:py-[120px]">
     <div class="container">
       <div class="-mx-4 flex flex-wrap lg:justify-between">
         <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -85,7 +85,7 @@
               </div>
               <div class="w-full">
                 <h4 class="dark:text-zinc-100 text-dark mb-1 text-xl font-bold">{{ _("Email Address") }}</h4>
-                <p class="dark:text-zinc-300 text-body-color text-base">{{ _("roberto.manna84@gmail.com") }}</p>
+                <p class="dark:text-zinc-300 text-body-color text-base">{{ _("robertomanna84@gmail.com") }}</p>
               </div>
             </div>
           </div>
@@ -122,11 +122,11 @@
                                 throw response;
                             })
                             .then(result => {
-                                {{-- this.formData = {
+                                this.formData = {
                                     name: '',
                                     email: '',
                                     message: '',
-                                }; --}}
+                                };
                                 this.successMessage = 'Thank you for contacting me';
                             })
                             .catch(async (response) => {

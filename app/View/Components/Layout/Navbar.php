@@ -19,7 +19,7 @@ class Navbar extends Component
         $this->navigationItems = [
             ['label' => 'About', 'href' => '#about'],
             ['label' => 'Projects', 'href' => '#portfolio'],
-            ['label' => 'Education', 'href' => '#education'],
+            ['label' => 'Videos', 'href' => '#videos'],
             ['label' => 'Contact', 'href' => '#contact'],
         ];
     }

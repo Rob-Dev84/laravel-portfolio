@@ -7,6 +7,7 @@
                 <div class="py-3 sm:py-4">
                   <img
                     src="https://cdn.tailgrids.com/1.0/assets/images/services/image-1.jpg"
+                    {{-- src="/img/RobertoManna.png" --}}
                     alt=""
                     class="w-full rounded-2xl"
                   />
@@ -14,6 +15,7 @@
                 <div class="py-3 sm:py-4">
                   <img
                     src="https://cdn.tailgrids.com/1.0/assets/images/services/image-2.jpg"
+                    {{-- src="/img/RobertoManna.png" --}}
                     alt=""
                     class="w-full rounded-2xl"
                   />
@@ -23,6 +25,7 @@
                 <div class="relative z-10 my-4">
                   <img
                     src="https://cdn.tailgrids.com/1.0/assets/images/services/image-3.jpg"
+                    {{-- src="/img/RobertoManna.png" --}}
                     alt=""
                     class="w-full rounded-2xl"
                   />
@@ -55,7 +58,7 @@
                 {{ _('Laravel') }}
                 </span>
               </p>
-              <x-button-link href="#portfolio" variant="red" target="_blank">
+              <x-button-link href="#portfolio" variant="red">
                 {{ _("My Portfolio") }}
               </x-button-link>
             </div>

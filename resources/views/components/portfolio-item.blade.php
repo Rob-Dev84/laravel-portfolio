@@ -20,7 +20,7 @@
             <span class="text-primary mb-2 block text-sm font-semibold">
               {{ implode(", ", $categories) }}
             </span>
-            <h3 class="text-dark mb-4 text-xl font-bold">
+            <h3 class="text-dark dark:text-zinc-200 mb-4 text-xl font-bold">
                 {{ $title }}
             </h3>
             <x-button-link href="{{ $gitHub }}" variant="outline-primary">

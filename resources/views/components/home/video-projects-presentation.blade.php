@@ -1,4 +1,4 @@
-<section id="videoProjectPresentation" class="dark:bg-slate-800 pt-24 pb-16">
+<section id="videos" class="dark:bg-slate-800 pt-24 pb-16">
   <div class="container">
     <div class="-mx-4 flex flex-wrap">
       <div class="w-full px-4">
@@ -28,8 +28,8 @@
 
     <div class="flex justify-center">
       <x-button-link 
-        href=""
-        target="_blank"
+        href="#videos"
+        {{-- target="_blank" --}}
         class="rounded-lg mt-10"
       >
         {{ _("View all videos") }}
