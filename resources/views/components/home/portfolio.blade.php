@@ -19,10 +19,10 @@
           <h2
             class="text-dark dark:text-zinc-200 mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
           >
-            {{ _("My Recent Projects") }}
+            {{ __("portfolio.title") }}
           </h2>
           <p class="text-body-color text-base">
-            {{ _("Filter project by the tecnology used") }}
+            {{ __("portfolio.intro") }}
           </p>
         </div>
       </div>
@@ -36,7 +36,7 @@
               :class="selectedTab == 'all' ? activeClasses : inactiveClasses "
               class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8"
             >
-            {{ _("All Projects") }}
+            {{ __("portfolio.filterButton") }}
             </button>
           </li>
 
@@ -61,7 +61,7 @@
             <x-portfolio-item :title="$item['title']"
                               :categories="$item['category']"
                               :image="$item['image']"
-                              :gitHub="$item['gitHub']"></x-portfolio-item>
+                              :link="$item['link']"></x-portfolio-item>
         @endforeach
     </div>
   </div>

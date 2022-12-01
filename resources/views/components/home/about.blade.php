@@ -43,23 +43,21 @@
                     cite="https://www.brainyquote.com/quotes/carl_friedrich_gauss_319898"
                     class="text-sm text-zinc-300 italic py-2 px-3 border-l-4 border-amber-500"
                 >
-                    {{ _("The enchanting charms of this sublime science reveal only to those who have the courage to go deeply into it") }}
+                    {{ __("about.quote") }}
                 </blockquote>
                 <figcaption>{{ _("Carl Friedrich Gauss") }}</figcaption>
               </span>
               <h2 class="dark:text-zinc-100 mb-8 text-3xl font-bold sm:text-4xl">
-                {{ _("I'm a web developer with 3 years expirience.") }}
-                <br>
-                {{ _("I started as front-end and gradually I moved to the back side") }}
+                {{ __("about.title") }}
               </h2>
               <p class="dark:text-zinc-300 mb-8 text-base">
-                {{ _("I have been workin on several project with PHP and I'm currently focusing on") }}
+                {{ __("about.paragraph") }}
                 <span class="text-amber-500 font-bold">
-                {{ _('Laravel') }}
+                {{ __('Laravel') }}
                 </span>
               </p>
               <x-button-link href="#portfolio" variant="red">
-                {{ _("My Portfolio") }}
+                {{ __("about.button") }}
               </x-button-link>
             </div>
           </div>

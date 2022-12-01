@@ -3,13 +3,13 @@
     <div class="container">
         <div class="flex flex-wrap justify-between">
             <span class="inline-flex items-center text-xl">
-                {{ _('Follow me on social media') }}
+                {{ __('footer.socialMedia') }}
             </span>
             <x-social-icons class="mb-0"></x-sacial-icons>
         </div>
         <div class="flex justify-center">
             <div>
-                &copy; {{ date('Y'); }} Designed and Powered by Roberto Manna
+                &copy; {{ date('Y'); }} {{ __('footer.copyright') }}
             </div>
         </div>
     </div>

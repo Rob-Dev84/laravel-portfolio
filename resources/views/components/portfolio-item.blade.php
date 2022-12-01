@@ -5,7 +5,7 @@
 >
 
     <div class="relative mb-12">
-        <a href="{{ $gitHub }}" target="_blank">
+        <a href="{{ $link }}" target="_blank">
             <div class="overflow-hidden rounded-lg ease-in duration-100 hover:scale-105">
                 <img
                     src="{{ $image }}"
@@ -23,8 +23,8 @@
             <h3 class="text-dark dark:text-zinc-200 mb-4 text-xl font-bold">
                 {{ $title }}
             </h3>
-            <x-button-link href="{{ $gitHub }}" variant="outline-primary">
-                {{ _('View Details') }}
+            <x-button-link href="{{ $link }}" variant="outline-primary">
+                {{ __('portfolio.buttons') }}
             </x-button-link>
           </div>
     </div>

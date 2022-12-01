@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\LanguageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,26 @@ use App\Http\Controllers\ContactController;
 |
 */
 
+// Route::group([
+//     'prefix' => '{lang}',
+//     'where' => ['lang', '[a-zA-Z]{2}']
+// ], function () {
+
+//     Route::get('/', function () {
+//         return view('home');
+//     })->name('home');
+
+    
+// });
+
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::post('/contact/submit', [ContactController::class, 'submit']);
+
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
+
+// Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => LanguageController::class, 'switchLang']);
+
 

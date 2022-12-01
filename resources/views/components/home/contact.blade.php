@@ -9,10 +9,10 @@
             <h2
               class="text-dark dark:zinc-100 mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
             >
-              {{ _("Contact me") }}
+              {{ __("contact.title") }}
             </h2>
             <p class="dark:text-zinc-100 text-body-color mb-9 text-base leading-relaxed">
-                {{ _("I you think my skills can possibly be useful for your business, feel free to contat me.") }}
+                {{ __("contact.paragraph") }}
             </p>
             <div class="mb-8 flex w-full max-w-[370px]">
               <div
@@ -46,9 +46,9 @@
                 </svg>
               </div>
               <div class="w-full">
-                <h4 class="dark:text-zinc-100 text-dark mb-1 text-xl font-bold">{{ _("My Location") }}</h4>
+                <h4 class="dark:text-zinc-100 text-dark mb-1 text-xl font-bold">{{ __("contact.titleLocation") }}</h4>
                 <p class="dark:text-zinc-300 text-body-color text-base">
-                    {{ _("Seville, Spain.") }}
+                    {{ __("contact.paragraphLocation") }}
                 </p>
               </div>
             </div>
@@ -84,8 +84,8 @@
                 </svg>
               </div>
               <div class="w-full">
-                <h4 class="dark:text-zinc-100 text-dark mb-1 text-xl font-bold">{{ _("Email Address") }}</h4>
-                <p class="dark:text-zinc-300 text-body-color text-base">{{ _("robertomanna84@gmail.com") }}</p>
+                <h4 class="dark:text-zinc-100 text-dark mb-1 text-xl font-bold">{{ __("contact.titleEmail") }}</h4>
+                <p class="dark:text-zinc-300 text-body-color text-base">{{ "robertomanna84@gmail.com" }}</p>
               </div>
             </div>
           </div>
@@ -147,26 +147,26 @@
                 <div x-text="successMessage" class="py-4 px-6 bg-green-600 text-zinc-100 mb-4"></div>
             </template>
               <div class="mb-6">
-                <x-forms.input x-model="formData.name" name="name" ::class="errors.name ? 'border-red-500 focus:border-red-500' : '' " placeholder='{{ _("Your Name") }}'></x-forms.input>
+                <x-forms.input x-model="formData.name" name="name" ::class="errors.name ? 'border-red-500 focus:border-red-500' : '' " placeholder='{{ __("contact.inputNameTitle") }}'></x-forms.input>
                 <template x-if="errors.name">
                     <div x-text="errors.name[0]" class="text-red-500"></div>
                 </template>
               </div>
               <div class="mb-6">
-                <x-forms.input x-model="formData.email" type="email" name="email" ::class="errors.email ? 'border-red-500 focus:border-red-500' : '' " placeholder='{{ _("Your Email") }}'></x-forms.input>
+                <x-forms.input x-model="formData.email" type="email" name="email" ::class="errors.email ? 'border-red-500 focus:border-red-500' : '' " placeholder='{{ __("contact.inputEmailTitle") }}'></x-forms.input>
                 <template x-if="errors.email">
                     <div x-text="errors.email[0]" class="text-red-500"></div>
                 </template>
               </div>
               <div class="mb-6">
-                <x-forms.textarea x-model="formData.message" name="message" rows="6" ::class="errors.message ? 'border-red-500 focus:border-red-500' : '' " placeholder='{{ _("Your Message") }}'></x-forms.textarea>
+                <x-forms.textarea x-model="formData.message" name="message" rows="6" ::class="errors.message ? 'border-red-500 focus:border-red-500' : '' " placeholder='{{ __("contact.inputMessageTitle") }}'></x-forms.textarea>
                 <template x-if="errors.message">
                     <div x-text="errors.message[0]" class="text-red-500"></div>
                 </template>
               </div>
               <div>
                 <x-button class="w-full">
-                    {{ _("Send Message") }}
+                    {{ __("contact.button") }}
                 </x-button>
               </div>
             </form>

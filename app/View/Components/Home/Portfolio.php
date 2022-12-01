@@ -20,23 +20,29 @@ class Portfolio extends Component
         $this->items = [
             [
                 'category' => ['Laravel', 'Tailwind', 'AlpineJs'],
-                'title' => 'Fantasy Football - working in progress',
+                'title' => __('portfolio.projectTitle1'),
                 // 'image' => url('/img/logo.png'),
                 'image' => url('https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-01.jpg'),
-                'gitHub' => 'https://github.com/Rob-Dev84/FantasyCalcio',
+                'link' => 'https://github.com/Rob-Dev84/FantasyCalcio',
             ],
             [
                 'category' => ['PHP', 'VanillaJS'],
-                'title' => 'Business showcase website',
+                'title' => __('portfolio.projectTitle2'),
                 'image' => url('/img/marioBuono.png'),
-                'gitHub' => 'https://www.mariobuono.it/',
+                'link' => 'https://www.mariobuono.it/',
             ],
             [
                 'category' => ['PHP', 'Bootstrap', 'JQuery'],
-                'title' => 'Task Management System',
+                'title' => __('portfolio.projectTitle3'),
                 'image' => url('/img/wrm.png'),
-                'gitHub' => 'https://wrm.solutions/',
-            ]
+                'link' => 'https://wrm.solutions/',
+            ],
+            [
+                'category' => ['Laravel', 'Tailwind', 'AlpineJs'],
+                'title' => __('portfolio.projectTitle4'),
+                'image' => url('/img/wrm.png'),
+                'link' => '/',
+            ],
         ];
 
         // $this->tabs = Arr::pluck($this->items, 'category');
