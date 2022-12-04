@@ -3,6 +3,7 @@
 return [
 
     'About' => 'Sobre',
+    'Education' => 'Formazione',
     'Projects' => 'Proyectos',
     'Videos' => 'Video',
     'Contacts' => 'Contactos',
