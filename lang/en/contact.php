@@ -11,5 +11,6 @@ return [
     'inputEmailTitle' => 'Your Email',
     'inputMessageTitle' => 'Your Message',
     'button' => 'Send Message',
+    'successMessage' => 'Thank you for contact me',
 
 ];

@@ -5,19 +5,14 @@ namespace App\Http\Controllers;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Requests\SendMessageRequest;
 
 class ContactController extends Controller
 {
-    public function submit(Request $request)
+    public function submit(SendMessageRequest $request)
     {
         
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'message' => 'required',
-        ]);
-
-        // // Send email
+        // Send email
         Mail::to('r.manna.design@gmail.com')
             ->send(new ContactMail($request['name'], 
                                     $request['email'], 

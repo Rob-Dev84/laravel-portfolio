@@ -127,7 +127,7 @@
                                     email: '',
                                     message: '',
                                 };
-                                this.successMessage = 'Thank you for contacting me';
+                                this.successMessage = '{{ __("contact.successMessage") }}';
                             })
                             .catch(async (response) => {
                                 const res = await response.json();
